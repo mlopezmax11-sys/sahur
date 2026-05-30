@@ -1,0 +1,210 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #334155;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f1f5f9;
+    padding: 20px 5%;
+    display: block;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    color: #334155;
+    display: inline-block;
+}
+
+header .logo h1 span {
+    color: #ff6600;
+}
+
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #334155;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hero {
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #334155;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #cbd5e1;
+    color: #334155;
+}
+
+#juegos, .offers-section {
+    padding: 60px 5%;
+    background-color: #ffffff;
+}
+
+.info-section, .faq-section {
+    padding: 60px 5%;
+    background-color: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #334155;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.games-grid, .security-container, .offers-container {
+    text-align: center;
+}
+
+.game-card, .step-card, .offer-box {
+    display: inline-block;
+    width: 260px;
+    margin: 15px;
+    background-color: #f1f5f9;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #e2e8f0;
+}
+
+.faq-item {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 15px auto;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.game-info h3, .step-card h4, .offer-box h3, .faq-item h4 {
+    font-size: 1.3rem;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.game-info p, .step-card p, .offer-box p, .faq-item p {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.btn-game {
+    display: block;
+    text-align: center;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.step-card code {
+    background-color: #e2e8f0;
+    color: #ff6600;
+    padding: 2px 4px;
+}
+
+.badge {
+    background-color: #cbd5e1;
+    color: #334155;
+    padding: 3px 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 2px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    header .logo, header nav {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    header nav {
+        margin-top: 15px;
+    }
+    header nav ul li {
+        margin: 5px 10px;
+    }
+    .game-card, .step-card, .offer-box, .faq-item {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+}
